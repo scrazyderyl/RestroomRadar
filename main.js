@@ -1,9 +1,21 @@
 var map;
 
+//Remove point of interest on the map
+var mapStyle = [
+  {
+    featureType: "poi",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 40.4455452, lng: -79.9561952 },
     zoom: 16,
+    styles: mapStyle
   });
 }
 
