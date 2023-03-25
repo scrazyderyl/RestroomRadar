@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restroom Radar</title>
+    <link rel="stylesheet" type="text/css" href="shared.css">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <body>
-    <div class="entire-page">
-        <div class="navbar">
-            <p class="title">Restroom Radar</p>
-        </div>
-    
+    <div class="navbar">
+        <p class="title">Restroom Radar</p>
+    </div>
+
+    <div class="main-content">
         <div id="map"></div>
         <script src="main.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_9tWsPGAuhXA_gysAil8nkFUBy-YXWvU&callback=initMap&v=weekly"></script>
-
+    
         <div class="addbutton">
-            <input class="grabLocation" type="button" value="Add Bathroom" onclick="grabCurrentLocation();">
+            <input class="grabLocation" type="button" value="Add Bathroom" onClick="newLocation();">
         </div>
+    
+        <p class="reviews-heading">Reviews</p>
+        <div id="reviews" class="reviews"></div>
     </div>
-</body>
 </html>

@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.full-question-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.dual-choice{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2vh;
+    height: 15vh;
+    width: 15vh;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.five-choice{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2vh;
+    height: 15vh;
+    min-width: 15vh;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.four-choice{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+
+    border-radius: 2vh;
+
+    height: 15vh;
+    min-width: 15vh;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.submit {
+    user-select: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#key-true{
+    background-color: #3BB273;
+    margin-right: 5%;
+}
+
+#key-false{
+    background-color: #E15554;
+}
+
+#pay-true{
+    background-color: #3BB273;
+    margin-right: 5%;
+}
+
+#pay-false{
+    background-color: #E15554;
+}
+
+#handicap-true{
+    background-color: #3BB273;
+    margin-right: 5%;
+}
+
+#handicap-false{
+    background-color: #E15554;
+}
+
+#size-single{
+    background-color: #E15554;
+    margin-right: 5%;
+}
+
+#size-small{
+    background-color: #F99D24;
+    margin-right: 5%;
+}
+
+#size-medium{
+    background-color: #EDCA2F;
+    margin-right: 5%;
+}
+
+#size-large{
+    background-color: #3BB273;
+}
+
+#clean-1{
+    background-color: #E15554;
+    margin-right: 5%;
+}
+
+#clean-2{
+    background-color: #F99D24;
+    margin-right: 5%;
+}
+
+#clean-3{
+    background-color: #EDCA2F;
+    margin-right: 5%;
+}
+
+#clean-4{
+    background-color: #BFEC5E;
+    margin-right: 5%;
+}
+
+#clean-5{
+    background-color: #3BB273;
+}
+
+#scent-1{
+    background-color: #E15554;
+    margin-right: 5%;
+}
+
+#scent-2{
+    background-color: #F99D24;
+    margin-right: 5%;
+}
+
+#scent-3{
+    background-color: #EDCA2F;
+    margin-right: 5%;
+}
+
+#scent-4{
+    background-color: #BFEC5E;
+    margin-right: 5%;
+}
+
+#scent-5{
+    background-color: #3BB273;
+}
+
+.question {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+#comment-box{
+    display: none;
+
+    width: 450px;
+    height: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#key-question{
+    display: none;
+    
+}
+
+#pay-question{
+    display: none;
+}
+
+#handicap-question{
+    display: none;
+}
+
+#size-question{
+    display: none;
+}
+
+#clean-question{
+    display: none;
+}
+
+#scent-question{
+    display: none;
+}
+
+#comment-question{
+    display: none;
+}
+
+#name-question{
+    display: none;
+}
+
+#enter-name{
+    display: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+#submit-button-begin{
+    display: none;
+    background-color: #3BB273;
+    color: white;
+
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    border-radius: 2vh;
+
+    height: 10vh;
+    width: 30vh;
+}
+
+#submit-button-end{
+    display: none;
+    background-color: #3BB273;
+    color: white;
+
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    border-radius: 2vh;
+
+    height: 10vh;
+    width: 30vh;
+}

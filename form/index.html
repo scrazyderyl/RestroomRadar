@@ -4,12 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../shared.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Rate the Bathroom</h1>
-    <form >
+    <div class="navbar">
+        <p class="title">Restroom Radar</p>
+    </div>
 
-    </form>
+    <div class="main-content">
+        <div class ="full-question-container">
+            <div id="key-question" class="question">Does the bathroom require a key?</div>
+            <div id="pay-question" class="question">Does the bathroom require payment?</div>
+            <div id="handicap-question" class="question">Is the bathroom handicap accessible?</div>
+            <div id="size-question" class="question">How big is the bathroom?</div>
+            <div id="clean-question" class="question">How clean was the bathroom?</div>
+            <div id="scent-question" class="question">How does the bathroom smell?</div>
+            <div id="comment-question" class="question">Additional comments</div>
+            <div id="name-question" class="question">Name the Restroom</div>
+            
+            <div class="question-container">
+                <input id="enter-name" type="text">
+    
+                <div id="key-true" class="dual-choice">Yes</div>
+                <div id="key-false" class="dual-choice">No</div>
+    
+                <div id="pay-true" class="dual-choice">Yes</div>
+                <div id="pay-false" class="dual-choice">No</div>
+    
+                <div id="handicap-true" class="dual-choice">Yes</div>
+                <div id="handicap-false" class="dual-choice">No</div>
+    
+                <div id="size-single" class="four-choice">Single<br>1 stall</div>
+                <div id="size-small" class="four-choice">Small<br>2-3 stalls</div>
+                <div id="size-medium" class="four-choice">Medium<br>4-7 stalls</div>
+                <div id="size-large" class="four-choice">Large<br>8+ stalls</div>
+    
+                <div id="clean-1" class="five-choice">1</div>
+                <div id="clean-2" class="five-choice">2</div>
+                <div id="clean-3" class="five-choice">3</div>
+                <div id="clean-4" class="five-choice">4</div>
+                <div id="clean-5" class="five-choice">5</div>
+    
+                <div id="scent-1" class="five-choice">1</div>
+                <div id="scent-2" class="five-choice">2</div>
+                <div id="scent-3" class="five-choice">3</div>
+                <div id="scent-4" class="five-choice">4</div>
+                <div id="scent-5" class="five-choice">5</div>
+    
+                <textarea id="comment-box" rows="5" cols="100" maxlength="255"></textarea>
+            </div>
+            <div id="submit-button-begin" class="submit">Submit</div>
+            <div id="submit-button-end" class="submit">Submit</div>
+        </div>
+    </div>
 </body>
+<script src="form.js"></script>
 </html>
