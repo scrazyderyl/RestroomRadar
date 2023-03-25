@@ -7,14 +7,33 @@ function initMap() {
   });
 }
 
+//After clicking the button you can click the map which will call the add bathroom with the location
+function addMapListener() {
+  google.maps.event.addListener(map, 'click', function(event) {
+    addBathroom(event.latLng);
+  })
+}
 
-function createMarker(lat, long, title) {
+//Load the form here and add the other information with location to db?
+function addBathroom(location) {
+  title = "test"
 
-} 
-function addInfoWindow(marker, message) {
+
+  createMarker(location, title)
+}
+
+function createMarker(location, title) {
+  var marker = new google.maps.Marker({
+    position: location,
+    map: map
+  });
+  map.panTo(position);
+}
+
+function addInfoWindow(marker, title) {
 
   var infoWindow = new google.maps.InfoWindow({
-      content: message
+      content: title
   });
 
   google.maps.event.addListener(marker, 'click', function () {
