@@ -1,0 +1,29 @@
+#map {
+    height: 500px;
+    width: 800px;
+}
+
+.entire-page {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+}
+
+p, h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: royalblue;
+    height: 60px;
+    color: #f0f0f0;
+}
+
+.title {
+    font-size: 32px;
+}
