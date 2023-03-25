@@ -28,7 +28,7 @@ p, h1, h2, h3 {
     font-size: 32px;
 }
 
-.addListener {
+.grabLocation {
     display:inline-block;
     padding:0.7em 1.4em;
     margin:0 0.3em 0.3em 0;
@@ -45,7 +45,7 @@ p, h1, h2, h3 {
     position:relative;
 }
 
-.addListener:hover{
+.grabLocation:hover{
     color:#000000;
     background-color:#FFFFFF;
 }
