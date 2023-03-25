@@ -20,10 +20,18 @@ function initMap() {
 }
 
 //After clicking the button you can click the map which will call the add bathroom with the location
-function addMapListener() {
-  google.maps.event.addListener(map, 'click', function(event) {
-    addBathroom(event.latLng);
-  })
+function grabCurrentLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var currentLat = position.coords.latitude;
+      var currentLng = position.coords.longitude;
+
+      // Add a marker to the map at the current location coordinates
+      addBathroom({ lat: currentLat, lng: currentLng })
+    });
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
 }
 
 //Load the form here and add the other information with location to db?
@@ -37,6 +45,7 @@ function addBathroom(location) {
 function createMarker(location, title) {
   var marker = new google.maps.Marker({
     position: location,
+    content:title,
     map: map
   });
   map.panTo(position);
