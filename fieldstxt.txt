@@ -1,5 +1,6 @@
 key or no key boolean
 pay or no pay int
+handicap accessible boolean
 	
 cleanliness int 1-5
 
@@ -9,6 +10,3 @@ size (single person 1
       small 2-3 stalls 
       medium 4-7 stalls
       large 8+ stalls)
-
-handicap accessible boolean
-

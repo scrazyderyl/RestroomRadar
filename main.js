@@ -62,5 +62,9 @@ function addInfoWindow(marker, title) {
   });
 }
 
+function loadReviews(marker) {
+  const obj = JSON.parse(json);
+  
+}
 
 window.initMap = initMap;
